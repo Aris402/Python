@@ -1,0 +1,9 @@
+N = int(input())
+Soma = 0
+Dias = 0
+for i in range(N):
+    A = int(input())
+    Soma += A
+    if Soma <= 1000000:
+        Dias += 1
+print(Dias)
