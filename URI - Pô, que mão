@@ -1,0 +1,17 @@
+N = int(input())
+X = int(input())
+Y = int(input())
+Z = int(input())
+Total = 0
+Lista = [X, Y, Z]
+Lista.sort()
+if X + Y + Z <= N:
+    Total = 3
+elif X + Y + Z > N:
+    if Lista[0] + Lista[1] <= N:
+        Total = 2
+    elif Lista[0] + Lista[1] > N >= Lista[0] or Lista[0] + Lista[1] > N >= Lista[1]:
+        Total = 1
+    else:
+        Total = 0
+print(Total)
